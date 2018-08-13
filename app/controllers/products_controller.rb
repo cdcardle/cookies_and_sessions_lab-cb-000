@@ -6,5 +6,7 @@ class ProductsController < ApplicationController
     item = params[:item]
 
     cart << item
+
+    redirect '/'
   end
 end
