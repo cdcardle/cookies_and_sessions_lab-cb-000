@@ -7,6 +7,6 @@ class ProductsController < ApplicationController
 
     cart << item
 
-    redirect_to '/'
+    render 'index'
   end
 end
