@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
     item = params[:item]
 
     if item.nil?
+    else
       cart << item
     end
 
