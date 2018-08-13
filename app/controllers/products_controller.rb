@@ -5,10 +5,10 @@ class ProductsController < ApplicationController
   def add
     item = params[:item]
 
-    if !item.nil?
+    if item.nil?
       cart << item
     end
-    
+
     render 'index'
   end
 end
