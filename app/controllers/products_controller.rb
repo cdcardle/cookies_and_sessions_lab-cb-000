@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   def add
     item = params[:item]
 
-    cart << item
+    cart << item if !item.nil?
 
     render 'index'
   end
