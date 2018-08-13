@@ -6,4 +6,7 @@ class ApplicationController < ActionController::Base
   def cart
     session[:cart] ||= []
   end
+
+  private
+  helper_method :cart
 end
