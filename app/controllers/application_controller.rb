@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   private
-  
+
   helper_method :cart
 end
