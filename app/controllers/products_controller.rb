@@ -3,6 +3,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-    raise params
+    item = params[:item]
+
+    cart << item
   end
 end
