@@ -3,9 +3,9 @@ class ProductsController < ApplicationController
   end
 
   def add
-    item = params[:product]
+    product = params[:product]
 
-    cart << item
+    cart << product
 
     render 'index'
   end
